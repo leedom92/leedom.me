@@ -1,0 +1,14 @@
+---
+import NavLink from './NavLink.astro';
+---
+
+<nav class="md:w-[100px] fixed md:py-10 px-6 py-3 inline-flex md:block md:flex-col w-full flex-row justify-between bg-white md:bg-transparent md:shadow-none shadow-sm z-[1] items-center">
+	<a class="block" href="https://github.com/leedom92" target="_blank" rel="noopener noreferrer">
+		<img class="w-10 rounded-lg" src="/avatar.jpeg" alt="avatar" srcset="">
+	</a>
+	<div class="inline-flex gap-4 md:flex-col md:mt-6">
+		<NavLink href="/">Home</NavLink>
+		<NavLink href="/blog">Blog</NavLink>
+		<NavLink target="_blank" href="https://github.com/leedom92">Github</NavLink>
+	</div>
+</nav>

@@ -1,0 +1,14 @@
+---
+import Nav from './Nav.astro';
+import Main from './Main.astro';
+import Prose from './Prose.astro';
+---
+
+<div class="m-auto max-w-screen-lg">
+  <Nav />
+  <Main>
+    <Prose>
+      <slot />
+    </Prose>
+  </Main>
+</div>
