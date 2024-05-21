@@ -1,0 +1,26 @@
+[
+  {
+    "author": "leedomjs",
+    "name": "You-Dont-Need-Useless-Dom",
+    "url": "https://github.com/leedomjs/You-Dont-Need-Useless-Dom",
+    "desc": "🪀「你不需要无用的Dom」You Don't Need (may not) Useless Dom. A simple chrome extension."
+  },
+  {
+    "author": "leedomjs",
+    "name": "eslint-config",
+    "url": "https://github.com/leedomjs/eslint-config",
+    "desc": "🔧「ESLint配置预设」Leedom's ESLint config presets"
+  },
+  {
+    "author": "leedomjs",
+    "name": "stylelint-config",
+    "url": "https://github.com/leedomjs/stylelint-config",
+    "desc": "🎀「Stylelint配置预设」Leedom's Stylelint config presets"
+  },
+  {
+    "author": "leedomjs",
+    "name": "tailwindcss-preset",
+    "url": "https://github.com/leedomjs/tailwindcss-preset",
+    "desc": "💨「Tailwind CSS配置预设」Leedom's tailwindcss preset"
+  }
+]

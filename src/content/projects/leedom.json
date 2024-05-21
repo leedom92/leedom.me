@@ -1,0 +1,14 @@
+[
+  {
+    "author": "leedom",
+    "name": "vue h5 template",
+    "url": "https://github.com/leedom92/vue-h5-template",
+    "desc": "🍰「Vue移动端项目模版」Vue 3 + Vite 5 + Vue Router + Pinia + Vant + Tailwindcss + Sass + ESLint + Stylelint + CSpell"
+  },
+  {
+    "author": "leedom",
+    "name": "vue element admin",
+    "url": "https://github.com/leedom92/vue-element-admin",
+    "desc": "🎉「基于 Vue 2 和 element-ui 的管理模板」An admin template based on Vue 2 & element-ui"
+  }
+]
