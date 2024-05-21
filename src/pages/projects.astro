@@ -15,7 +15,7 @@ const projects = await getCollection('projects');
 							<div class="xs:text-lg xs:absolute text-[#999] text-base left-0 top-7 m-0 mb-2 tracking-wide font-thin">{ item.author }</div>
 							<div class="text-2xl xs:text-3xl tracking-wide xs:ml-32 mb-0">
 								<a class="no-underline !text-[#666]" target="_blank" href={item.url}>
-									<div class="hover:!text-main/80 transition-colors delay-200 ease-linear">{item.name}</div>
+									<div class="hover:!text-main/80 !text-[#666] transition-colors delay-200 ease-linear">{item.name}</div>
 									<div class="text-sm text-[#888] mt-2">{item.desc}</div>
 								</a>
 							</div>
