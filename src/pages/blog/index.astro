@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
@@ -16,7 +16,7 @@ const posts = (await getCollection('blog')).sort(
 					<li class="relative xs:py-6 pt-4 pb-5 border-b border-gray-300 font-montserrat">
 						<div class="xs:text-sm xs:absolute text-[#999] text-xs left-0 top-7 m-0 mb-2 uppercase tracking-wide font-thin"><FormattedDate date={post.data.pubDate} /></div>
 						<div class="text-xl tracking-wide xs:ml-32 mb-0 uppercase">
-							<a class="!text-[#666] no-underline hover:!text-main transition-colors delay-250 ease-linear" href={`/blog/${post.slug}/`}>{post.data.title}</a>
+							<a class="!text-[#666] no-underline hover:!text-main/80 transition-colors delay-200 ease-linear" href={`/blog/${post.slug}/`}>{post.data.title}</a>
 						</div>
 					</li>
 				))
