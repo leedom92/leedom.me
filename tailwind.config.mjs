@@ -11,6 +11,10 @@ export default {
       },
 			screens: {
 				'xs': '475px',
+			},
+			fontFamily: {
+				montserrat: ['"Montserrat"', '"Helvetica Neue"',' "Hiragino Sans GB"', '"LiHei Pro"', 'Arial', 'sans-serif'],
+				roboto: ['"Roboto"', '"Helvetica Neue"', '"Hiragino Sans GB"', '"LiHei Pro"', 'Arial', 'serif']
 			}
 		},
 	},
