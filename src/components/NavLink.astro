@@ -21,32 +21,38 @@ const isActive = href === pathname || href === '/' + subpath?.[0];
     position: relative;
 		text-decoration: none;
     line-height: 1.4;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 100%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0.1em;
+      transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      background-color: rgba(79, 192, 141, 0.5);
+      font-weight: bolder;
+    }
+    
+    &.active {
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0.1em;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background-color: rgba(79, 192, 141, 0.5);
+        font-weight: bolder;
+      }
+    }
+
+    &:hover::after {
+      top: 0%;
+    }
 	}
-	a::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 100%;
-    left: -0.1em;
-    right: -0.1em;
-    bottom: 0.1em;
-    transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: rgba(79, 192, 141, 0.5);
-		font-weight: bolder;
-  }
-	a.active::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 60%;
-    left: -0.1em;
-    right: -0.1em;
-    bottom: 0.1em;
-    transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: rgba(79, 192, 141, 0.5);
-		font-weight: bolder;
-  }
-  a:hover:after {
-    top: 0%;
-  }
 </style>
