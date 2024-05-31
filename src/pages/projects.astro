@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Common.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
 ---
 
-<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<Layout title="Projects" description={SITE_DESCRIPTION}>
 		<ul class="list-none max-w-[600px] mx-auto p-0">
 			{
 				projects.map((project) => (
