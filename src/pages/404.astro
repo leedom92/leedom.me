@@ -1,26 +1,31 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import { SITE_DESCRIPTION } from '../consts';
+import BaseHead from '../components/BaseHead.astro'
+import { SITE_DESCRIPTION } from '../consts'
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title="Not Found" description={SITE_DESCRIPTION} />
+  <head>
+    <BaseHead title="Not Found" description={SITE_DESCRIPTION} />
     <style>
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
       .coding {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+          monospace;
         width: 9ch;
         padding-right: 2px;
         overflow: hidden;
         white-space: nowrap;
-        border-right: .1em solid #666;
-        animation: typing 2s steps(9, end), blink .5s 2.5s step-end infinite alternate;
+        border-right: 0.1em solid #666;
+        animation:
+          typing 2s steps(9, end),
+          blink 0.5s 2.5s step-end infinite alternate;
         position: relative;
         margin-left: 1ch;
 
@@ -43,12 +48,20 @@ import { SITE_DESCRIPTION } from '../consts';
         }
       }
     </style>
-	</head>
+  </head>
 
-	<body class="md:bg-slate-50 w-80 mx-auto h-screen flex flex-col justify-center font-montserrat p-6">
-		<div class="font-montserrat mb-2 text-slate-600 sm:text-3xl text-xl">Mysterious Place</div>
-    <a href="/" class="flex items-center sm:text-2xl text-lg">
-      <span class="text-gray-400/50">></span><div class="coding inline-block text-gray-400 before:text-gray-400/50 cursor-pointer hover:!text-main ease-in-out hover:!border-r-0">cd ~/home</div>
+  <body
+    class="mx-auto flex h-screen w-80 flex-col justify-center p-6 font-montserrat md:bg-slate-50"
+  >
+    <div class="mb-2 font-montserrat text-xl text-slate-600 sm:text-3xl">
+      Mysterious Place
+    </div>
+    <a href="/" class="flex items-center text-lg sm:text-2xl">
+      <span class="text-gray-400/50">></span><div
+        class="coding inline-block cursor-pointer text-gray-400 ease-in-out before:text-gray-400/50 hover:!border-r-0 hover:!text-main"
+      >
+        cd ~/home
+      </div>
     </a>
-	</body>
+  </body>
 </html>

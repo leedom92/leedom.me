@@ -1,18 +1,18 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
+import { defineConfig } from 'astro/config'
+import mdx from '@astrojs/mdx'
+import sitemap from '@astrojs/sitemap'
 
-import tailwind from "@astrojs/tailwind";
+import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://leedom.me',
   integrations: [
-    mdx(), 
-    sitemap(), 
+    mdx(),
+    sitemap(),
     tailwind({
       nesting: true,
-    })
+    }),
   ],
   markdown: {
     shikiConfig: {
@@ -25,4 +25,4 @@ export default defineConfig({
       wrap: true,
     },
   },
-});
+})

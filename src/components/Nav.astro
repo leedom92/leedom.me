@@ -1,15 +1,17 @@
 ---
-import NavLink from './NavLink.astro';
+import NavLink from './NavLink.astro'
 ---
 
-<nav class="md:w-[100px] fixed md:py-10 px-6 py-3 inline-flex md:block md:flex-col w-full flex-row justify-between bg-white md:bg-transparent md:shadow-none shadow-sm z-[1] items-center">
-	<a class="block" href="/">
-		<img class="w-10 rounded-lg" src="/avatar.jpeg" alt="avatar" srcset="">
-	</a>
-	<div class="inline-flex gap-4 md:flex-col md:mt-6">
-		<NavLink href="/">Home</NavLink>
-		<NavLink href="/blog">Blog</NavLink>
-		<NavLink href="/projects">Projects</NavLink>
-		<NavLink target="_blank" href="https://github.com/leedom92">Github</NavLink>
-	</div>
+<nav
+  class="fixed z-[1] inline-flex w-full flex-row items-center justify-between bg-white px-6 py-3 shadow-sm md:block md:w-[100px] md:flex-col md:bg-transparent md:py-10 md:shadow-none"
+>
+  <a class="block" href="/">
+    <img class="w-10 rounded-lg" src="/avatar.jpeg" alt="avatar" srcset="" />
+  </a>
+  <div class="inline-flex gap-4 md:mt-6 md:flex-col">
+    <NavLink href="/">Home</NavLink>
+    <NavLink href="/blog">Blog</NavLink>
+    <NavLink href="/projects">Projects</NavLink>
+    <NavLink target="_blank" href="https://github.com/leedom92">Github</NavLink>
+  </div>
 </nav>

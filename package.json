@@ -7,7 +7,12 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "prettier . --check",
+    "lint:fix": "prettier . --write"
+  },
+  "lint-staged": {
+    ".": "prettier --write"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
@@ -20,7 +25,12 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
     "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.1",
     "sass": "^1.77.2"
   }
 }
