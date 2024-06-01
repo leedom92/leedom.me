@@ -12,7 +12,7 @@
     "lint:fix": "prettier . --write"
   },
   "lint-staged": {
-    ".": "prettier --write"
+    "*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}": "prettier --write"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
