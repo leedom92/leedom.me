@@ -14,7 +14,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
     <BaseHead title={title} description={description} />
   </head>
 
-  <body class="md:bg-slate-50">
+  <body class="dark:bg-gray-900 md:bg-slate-50">
     <AppContainer>
       {heroImage && <img class="m-auto mb-8" src={heroImage} alt="" />}
       <div class="text-center">

@@ -13,13 +13,13 @@ const posts = (await getCollection('blog')).sort(
   <ul class="mx-auto max-w-[600px] list-none p-0">
     {
       posts.map((post) => (
-        <li class="relative border-b border-gray-300 pb-5 pt-4 font-montserrat xs:py-6">
-          <div class="left-0 top-7 m-0 mb-2 text-xs font-thin uppercase tracking-wide text-[#999] xs:absolute xs:text-sm">
+        <li class="relative border-b border-gray-300 pb-5 pt-4 font-montserrat dark:border-gray-800 xs:py-6">
+          <div class="left-0 top-7 m-0 mb-2 text-xs font-thin uppercase tracking-wide text-[#999] dark:text-gray-400 xs:absolute xs:text-sm">
             <FormattedDate date={post.data.pubDate} />
           </div>
           <div class="mb-0 text-xl uppercase tracking-wide xs:ml-32">
             <a
-              class="!text-[#666] no-underline transition-colors delay-200 ease-linear hover:!text-main/80"
+              class="!text-[#666] no-underline transition-colors delay-200 ease-linear hover:!text-main/80 dark:!text-gray-400 dark:hover:!text-main/80"
               href={`/blog/${post.slug}/`}
             >
               {post.data.title}

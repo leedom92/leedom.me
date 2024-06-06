@@ -11,8 +11,8 @@ const projects = await getCollection('projects')
     {
       projects.map((project) =>
         project.data.map((item) => (
-          <li class="relative border-b border-gray-300 pb-5 pt-4 font-montserrat xs:py-6">
-            <div class="left-0 top-7 m-0 mb-2 text-base font-thin tracking-wide text-[#999] xs:absolute xs:text-lg">
+          <li class="relative border-b border-gray-300 pb-5 pt-4 font-montserrat dark:border-gray-800 xs:py-6">
+            <div class="left-0 top-7 m-0 mb-2 text-base font-thin tracking-wide text-[#999] dark:text-gray-400 xs:absolute xs:text-lg">
               {item.author}
             </div>
             <div class="mb-0 text-2xl tracking-wide xs:ml-32">
@@ -21,10 +21,12 @@ const projects = await getCollection('projects')
                 target="_blank"
                 href={item.url}
               >
-                <div class="!text-[#666] transition-colors delay-200 ease-linear hover:!text-main/80">
+                <div class="!text-[#666] transition-colors delay-200 ease-linear hover:!text-main/80 dark:!text-gray-400 dark:hover:!text-main/80">
                   {item.name}
                 </div>
-                <div class="mt-2 text-sm text-[#888]">{item.desc}</div>
+                <div class="mt-2 text-sm text-[#888] dark:!text-gray-500">
+                  {item.desc}
+                </div>
               </a>
             </div>
           </li>
