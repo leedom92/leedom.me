@@ -1,6 +1,7 @@
 ---
 import NavLink from './NavLink.astro'
 import Theme from './Theme.astro'
+import Github from './Github.astro'
 ---
 
 <nav
@@ -14,10 +15,8 @@ import Theme from './Theme.astro'
       <NavLink href="/">Home</NavLink>
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/projects">Projects</NavLink>
-      <NavLink target="_blank" href="https://github.com/leedom92"
-        >Github</NavLink
-      >
     </div>
+    <Github href="https://github.com/leedom92" />
     <Theme />
   </div>
 </nav>
