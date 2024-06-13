@@ -6,6 +6,9 @@ export default {
     extend: {
       colors: {
         main: 'rgba(79, 192, 141, 1)',
+        'dark-1': '#151515',
+        'dark-2': '#1e1e1e',
+        'dark-3': '#ffffff31'
       },
       transitionTimingFunction: {
         evanyou: 'cubic-bezier(0, 0.8, 0.13, 1)',

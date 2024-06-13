@@ -14,11 +14,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
     <BaseHead title={title} description={description} />
   </head>
 
-  <body class="dark:bg-gray-900 md:bg-slate-50">
+  <body class="dark:bg-dark-2 md:bg-slate-50">
     <AppContainer>
       {heroImage && <img class="m-auto mb-8" src={heroImage} alt="" />}
       <div class="text-center">
-        <div class="mb-2 text-slate-400">
+        <div class="mb-2 text-slate-400 dark:text-dark-3">
           <FormattedDate date={pubDate} />
           {
             updatedDate && (
@@ -29,7 +29,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
           }
         </div>
         <h1>{title}</h1>
-        <hr />
+        <hr class="border-dark-3" />
       </div>
       <slot />
 

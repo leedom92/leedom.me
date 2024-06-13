@@ -13,7 +13,7 @@ const posts = (await getCollection('blog')).sort(
   <ul class="mx-auto max-w-[600px] list-none p-0">
     {
       posts.map((post) => (
-        <li class="relative border-b border-gray-300 pb-5 pt-4 font-montserrat dark:border-gray-800 xs:py-6">
+        <li class="relative border-b border-gray-300 pb-5 pt-4 font-montserrat dark:border-dark-3 xs:py-6">
           <div class="left-0 top-7 m-0 mb-2 text-xs font-thin uppercase tracking-wide text-[#999] dark:text-white xs:absolute xs:text-sm">
             <FormattedDate date={post.data.pubDate} />
           </div>
