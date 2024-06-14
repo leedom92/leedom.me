@@ -16,9 +16,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
 
   <body class="dark:bg-dark-2 md:bg-slate-50">
     <AppContainer>
-      {heroImage && <img class="m-auto mb-8" src={heroImage} alt="" />}
+      {heroImage && <img class="animate m-auto mb-8" src={heroImage} alt="" />}
       <div class="text-center">
-        <div class="mb-2 text-slate-400 dark:text-dark-3">
+        <div class="animate mb-2 text-slate-400 dark:text-dark-3">
           <FormattedDate date={pubDate} />
           {
             updatedDate && (
@@ -28,12 +28,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
             )
           }
         </div>
-        <h1>{title}</h1>
-        <hr class="dark:border-dark-3" />
+        <h1 class="animate">{title}</h1>
+        <hr class="animate dark:border-dark-3" />
       </div>
-      <slot />
 
-      <div class="my-8 text-gray-400/50">
+      <article class="animate">
+        <slot />
+      </article>
+
+      <div class="animate my-8 text-gray-400/50">
         ><a
           class="ml-2 !text-gray-400 no-underline transition-[border] ease-in-out hover:border-b hover:border-main hover:!text-main"
           href="javascript:window.history.go(-1);">cd . .</a
