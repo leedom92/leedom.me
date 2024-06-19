@@ -5,13 +5,13 @@ import Github from './Github.astro'
 ---
 
 <nav
-  class="fixed z-[1] inline-flex w-full flex-row items-center justify-between border-b-0 bg-white px-6 py-3 shadow-sm dark:border-b dark:border-dark-3 dark:bg-dark-2 dark:shadow-none md:block md:w-[100px] md:flex-col md:bg-transparent md:py-10 md:shadow-none md:dark:border-b-0"
+  class="md: fixed z-[1] inline-flex w-full flex-row items-center justify-between border-b-0 bg-white px-6 py-3 pr-1.5 shadow-sm dark:border-b dark:border-dark-3 dark:bg-dark-2 dark:shadow-none md:block md:w-[100px] md:flex-col md:bg-transparent md:py-10 md:shadow-none md:dark:border-b-0"
 >
   <a class="block" href="/">
     <img class="w-10 rounded-lg" src="/avatar.jpeg" alt="avatar" srcset="" />
   </a>
   <div class="flex md:flex-col">
-    <div class="inline-flex gap-4 md:mt-6 md:flex-col">
+    <div class="flex items-center gap-4 md:mt-6 md:flex-col md:items-start">
       <NavLink href="/">Home</NavLink>
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/projects">Projects</NavLink>
