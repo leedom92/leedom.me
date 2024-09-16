@@ -2,6 +2,7 @@
 import NavLink from './NavLink.astro'
 import Theme from './Theme.astro'
 import Github from './Github.astro'
+import ScrollToTop from './ScrollToTop.vue'
 ---
 
 <nav
@@ -18,5 +19,6 @@ import Github from './Github.astro'
     </div>
     <Github href="https://github.com/leedom92" />
     <Theme />
+    <ScrollToTop client:load />
   </div>
 </nav>
