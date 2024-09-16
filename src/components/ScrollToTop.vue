@@ -3,7 +3,7 @@
     title="Scroll to top"
     aria-label="Scroll to top"
     class="z-100 fixed bottom-3 right-3 h-10 w-10 rounded-full transition duration-300 hover:bg-[#8888] hover:opacity-100 dark:text-white dark:hover:bg-[#8883] print:hidden"
-    :class="scroll > 200 ? 'opacity-30' : 'pointer-events-none opacity-0'"
+    :class="scroll > 300 ? 'opacity-30' : 'pointer-events-none !opacity-0'"
     @click="toTop()"
   >
     <svg
