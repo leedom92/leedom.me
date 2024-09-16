@@ -54,8 +54,10 @@ const isActive = href === pathname || href === '/' + subpath?.[0]
         font-weight: bolder;
       }
     }
+  }
 
-    &:hover::after {
+  @media (min-width: 768px) {
+    a:hover::after {
       top: 0%;
     }
   }
