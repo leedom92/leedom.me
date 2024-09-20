@@ -33,6 +33,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+html.dark {
+  color-scheme: dark;
+}
+
 body {
   font-family: 'Atkinson', sans-serif;
   font-size: 20px;
