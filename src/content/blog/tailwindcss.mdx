@@ -21,8 +21,8 @@ $ npx tailwindcss init -p
 
 ## 引入
 
-```css
-/*  
+```sass
+/*
   在项目资源目录下新建css文件，引入tailwindcss三大部件
   ./your-css-folder/styles.css
 */
@@ -75,12 +75,14 @@ module.exports = {
 </template>
 ```
 
-```css
+```html
 /* 可以使用@apply指令将所用到的功能类整合成一个自定义的类 */
 <template>
   <h1 class="intro">tailwindcss</h1>
 </template>
+```
 
+```sass
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
